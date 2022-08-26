@@ -73,7 +73,23 @@ namespace ReflectionAssignment
             //    Console.WriteLine(c);
             //}
 
-            Type type1 = typeof(MoodAnalyserFactory);
+            //Type type1 = typeof(MoodAnalyserFactory);
+            //ConstructorInfo[] ci = type1.GetConstructors(BindingFlags.Public | BindingFlags.Instance);
+            //foreach (ConstructorInfo ci2 in ci)
+            //{
+            //    Console.WriteLine(ci2);
+            //}
+
+            //Console.WriteLine("--------------------------");
+
+            //Type type2 = typeof(MoodAnalyserFactory);
+            //MethodInfo[] mi = type2.GetMethods(BindingFlags.Public | BindingFlags.Instance);
+            //foreach (MethodInfo c in mi)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            Type type1 = typeof(Patterns);
             ConstructorInfo[] ci = type1.GetConstructors(BindingFlags.Public | BindingFlags.Instance);
             foreach (ConstructorInfo ci2 in ci)
             {
@@ -82,7 +98,7 @@ namespace ReflectionAssignment
 
             Console.WriteLine("--------------------------");
 
-            Type type2 = typeof(MoodAnalyserFactory);
+            Type type2 = typeof(Patterns);
             MethodInfo[] mi = type2.GetMethods(BindingFlags.Public | BindingFlags.Instance);
             foreach (MethodInfo c in mi)
             {
